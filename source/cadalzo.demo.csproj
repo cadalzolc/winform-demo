@@ -54,6 +54,18 @@
   <ItemGroup>
     <Compile Include="Controller\UserManagement.cs" />
     <Compile Include="Helpers\Server.cs" />
+    <Compile Include="Views\Dialogs\FrmDlgUsersCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\FrmDlgUsersCreate.Designer.cs">
+      <DependentUpon>FrmDlgUsersCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\FrmDlgUsersUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\FrmDlgUsersUpdate.Designer.cs">
+      <DependentUpon>FrmDlgUsersUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FrmUsers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +89,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\Dialogs\FrmDlgUsersCreate.resx">
+      <DependentUpon>FrmDlgUsersCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\FrmDlgUsersUpdate.resx">
+      <DependentUpon>FrmDlgUsersUpdate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmUsers.resx">
       <DependentUpon>FrmUsers.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,5 +130,6 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

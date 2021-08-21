@@ -33,7 +33,8 @@ namespace cadalzo.demo
             this.LblEncoder = new System.Windows.Forms.Label();
             this.GrdUsers = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnUserCreate = new System.Windows.Forms.Button();
+            this.BtnUsersUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GrdUsers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,21 +75,32 @@ namespace cadalzo.demo
             this.label2.TabIndex = 3;
             this.label2.Text = "List of Users";
             // 
-            // button1
+            // BtnUserCreate
             // 
-            this.button1.Location = new System.Drawing.Point(412, 10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(78, 34);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "New User";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnUserCreate.Location = new System.Drawing.Point(328, 13);
+            this.BtnUserCreate.Name = "BtnUserCreate";
+            this.BtnUserCreate.Size = new System.Drawing.Size(78, 34);
+            this.BtnUserCreate.TabIndex = 4;
+            this.BtnUserCreate.Text = "New User";
+            this.BtnUserCreate.UseVisualStyleBackColor = true;
+            // 
+            // BtnUsersUpdate
+            // 
+            this.BtnUsersUpdate.Enabled = false;
+            this.BtnUsersUpdate.Location = new System.Drawing.Point(412, 13);
+            this.BtnUsersUpdate.Name = "BtnUsersUpdate";
+            this.BtnUsersUpdate.Size = new System.Drawing.Size(78, 34);
+            this.BtnUsersUpdate.TabIndex = 5;
+            this.BtnUsersUpdate.Text = "Update User";
+            this.BtnUsersUpdate.UseVisualStyleBackColor = true;
             // 
             // FrmUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 300);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(503, 300);
+            this.Controls.Add(this.BtnUsersUpdate);
+            this.Controls.Add(this.BtnUserCreate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.GrdUsers);
             this.Controls.Add(this.LblEncoder);
@@ -112,6 +124,7 @@ namespace cadalzo.demo
         private System.Windows.Forms.Label LblEncoder;
         private System.Windows.Forms.DataGridView GrdUsers;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnUserCreate;
+        private System.Windows.Forms.Button BtnUsersUpdate;
     }
 }
